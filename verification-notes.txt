@@ -1,0 +1,8 @@
+Verifikasi browser 2026-09-14:
+- Preview berhasil dimuat pada URL WebDev dan seluruh elemen utama terlihat: sidebar, KPI, grafik, tabel pencapaian, proses berjalan, tombol input aktivitas/target.
+- Konsol browser tidak menghasilkan error.
+- Halaman memiliki 16 elemen interaktif utama yang terdeteksi, termasuk tombol Input aktivitas dan Input target analis.
+- Screenshot full-page sengaja menyembunyikan sidebar fixed sesuai aturan screenshot; screenshot viewport desktop menampilkan sidebar normal.
+- Screenshot mobile 390x844 menampilkan header mobile, CTA, dan kartu KPI satu kolom tanpa overflow horizontal pada viewport atas.
+Uji interaksi form: tombol Input aktivitas membuka modal dengan field analis, jenis aktivitas, nominal, dan catatan. Pengisian nominal 275 dan catatan berhasil, submit menampilkan toast sukses dan item baru “Penagihan DPK baru” muncul paling atas pada daftar Proses berjalan. Tidak ada error runtime.
+Verifikasi integrasi pencapaian 2026-09-14: Sidebar menampilkan Input pencapaian analis. Modal terbuka dari menu tersebut dan menampilkan target aktif Rizki Pratama sebesar 6.2 M kredit, 4 M DPK, dan 2 M NPL. Form menyediakan realisasi kredit, DPK, NPL, serta catatan supervisi. TypeScript check dan production build berhasil tanpa error.
